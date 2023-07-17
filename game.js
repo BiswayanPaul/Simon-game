@@ -1,7 +1,7 @@
 let buttonColors = ["red", "blue", "green", "yellow"];
 let gamePattern = [];
 let userClickPattern = [];
-let delayInMiliseconds = 1000;
+let delayInMiliseconds = 100;
 let level = 0;
 let started = false;
 
@@ -70,7 +70,7 @@ function nextSequence() {
     let randomNumber = Math.floor((4 * Math.random()));
     let randomChosenColor = buttonColors[randomNumber];
     gamePattern.push(randomChosenColor);
-    $("#" + randomChosenColor).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500);
+    $("#" + randomChosenColor).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500).fadeOut(500).fadeIn(500);
     playSound(randomChosenColor);
 }
 
