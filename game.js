@@ -1,7 +1,7 @@
 let buttonColors = ["red", "blue", "green", "yellow"];
 let gamePattern = [];
 let userClickPattern = [];
-let delayInMiliseconds = 100;
+let delayInMiliseconds = 1000;
 let level = 0;
 let started = false;
 
